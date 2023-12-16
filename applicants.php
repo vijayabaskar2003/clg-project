@@ -49,7 +49,6 @@
         $languagesknown = explode(",", $r2["languagesknown"]);
         $lk = implode(", ", $languagesknown);
         $address=$r2["address"];
-
         $result1 = mysqli_query($conn, "select * from jobs where id='$jid'");
         $r1 = mysqli_fetch_assoc($result1);
         $companyname=$r1['companyname'];
