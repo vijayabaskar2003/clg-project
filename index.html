@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management System</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+            .home{
+                display: flex;
+                float: right; 
+                line-height: 60px;
+                list-style-type: none;
+            }
+                a{
+                    display: block;
+                    width: 180px;
+                    background-color: #007bff;
+                    color: white;
+                    padding : 10px 0px;
+                    font-size: 20pt;
+                    text-decoration: none;
+                    text-align: center;
+                }
+                    a:hover{
+                        background-color:red;
+                    }
+                        .student{
+                            list-style-type: none;
+                            display: none;
+                        }
+                            .home li:nth-child(2):hover .student{
+                                display: block;
+                            }
+        .company{
+            list-style-type: none;
+            display: none;
+        }
+        .home li:nth-child(3):hover .company{
+            display: block;
+        }
+    
+        .admin{
+            list-style-type: none;
+            display: none;
+        }
+        .home li:nth-child(4):hover .admin{
+            display: block;
+        }
+        .header img{
+            width: 400px;
+            padding-left : 5px;
+           padding-top: 2px;
+            }
+            .header{
+                background-color: #007bff;
+                width: 100%;
+            }
+            .page{
+                background-image: url('jobc.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                height:620px;
+                }
+                .container{
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                }
+                p{
+                    color: yellow;
+                }
+    </style>
+                
+</head>
+<body>
+    <div class="header">
+        <img src="jsc.png" alt="Jawahar Science College">
+    <ul class="home">
+        <li>
+            <a href="deprt.html">Departments</a></li>
+        <li><a href="#">Student</a>
+            <ul class="student">
+                <li><a href="staccount.php"> Create Account </a></li>
+                <li><a href="stlogin.php"> Login</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Company</a>
+            <ul class="company">
+                <li><a href="caccount.php"> Create Account </a></li>
+                <li><a href="clogin.php"> Login</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Admin</a>
+            <ul class="admin">
+                <li><a href="admin.php"> Login</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="page">
+    
+</div> 
+<footer>
+    <div class="container">
+      <p>&copy; 2023 Jawahar Science College, Placement Management System.</p>
+    </div>
+  </footer> 
+</body>
+</html>
